@@ -36,9 +36,9 @@ int main()
     for (int i = 0; i < categorias; i++)
     {
         scanf("%d", &valores[i]);
-        if (valores[i] == 0)
+        if (categorias == 0)
         {
-            histrograma[i] = NULL;
+            printf("vazio");
         }
         else
         {
