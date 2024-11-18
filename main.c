@@ -3,6 +3,10 @@
 
 void preenche_histrograma(char *h[], int valor, int categoria)
 {
+    if(categorias==0){
+        printf("vazio");
+        return;
+    }
     for (int i = 0; i < valor; i++)
     {
         h[categoria][i] = '*';
@@ -36,9 +40,9 @@ int main()
     for (int i = 0; i < categorias; i++)
     {
         scanf("%d", &valores[i]);
-        if (categorias == 0)
+       if (valores[i] == 0)
         {
-            printf("vazio");
+            histrograma[i] = NULL;
         }
         else
         {
