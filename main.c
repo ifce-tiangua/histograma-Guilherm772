@@ -49,7 +49,7 @@ int main()
 
     imprimir_histograma(histrograma, valores, categorias);
 
-    for(i=0;i<categorias;i++){
+    for(int i=0;i<categorias;i++){
         free(histrograma[i])
             ;
     } 
