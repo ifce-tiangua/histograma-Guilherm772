@@ -48,5 +48,10 @@ int main()
     }
 
     imprimir_histograma(histrograma, valores, categorias);
+
+    for(i=0;i<categorias;i++){
+        free(histograma[i];
+    } 
+    
     return 0;
 }
